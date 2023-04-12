@@ -16,6 +16,9 @@ The Objective of this project is to integrate software quality assurance activit
 3. Integrate forensics by modifying 5 Python methods of our choice.
 4. Report our activities and lessons learned.
 
+### Work In Progress
+1. Creating a Git Hook using Bandit and YAML file.
+
 ### Instructions
 TODO
 

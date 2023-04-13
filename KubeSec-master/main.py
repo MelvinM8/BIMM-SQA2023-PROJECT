@@ -3,7 +3,7 @@ Akond Rahman
 Sep 21, 2022
 Source Code to Run Tool on All Kubernetes Manifests
 """
-# This comment is made in order to test the Git Hook using Bandit.
+# Melvin Moreno Git Hook Test
 
 import scanner
 import pandas as pd

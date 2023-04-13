@@ -17,10 +17,14 @@ The Objective of this project is to integrate software quality assurance activit
 4. Report our activities and lessons learned.
 
 ### Work In Progress
-1. Creating a Git Hook using Bandit and YAML file.
+1. Creating a Git Hook using Bandit and YAML file. (DONE)
 
 ### Instructions
-TODO
+#### Git Hook Instructions
+1. Modify the files you want to check for security weaknesses.
+2. Git add the files.
+3. Git commit and see the pre-commit hook run.
+4. Check the CSV file for the results.
 
 ### Deadline
 May 01, 2023

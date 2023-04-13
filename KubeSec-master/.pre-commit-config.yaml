@@ -13,3 +13,4 @@ repos:
     rev: 1.7.5 # Update me!
     hooks:
     -   id: bandit
+        args: [--output, bandit.csv]

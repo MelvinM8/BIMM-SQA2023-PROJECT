@@ -3,7 +3,8 @@ Akond Rahman
 Sep 21, 2022
 Source Code to Run Tool on All Kubernetes Manifests
 """
-# Git Hook Test #2
+# Git Hook Test #3
+# This is testing the bandit functionality.
 
 import scanner
 import pandas as pd

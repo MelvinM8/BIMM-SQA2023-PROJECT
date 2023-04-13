@@ -27,6 +27,7 @@ def getYAMLFiles(path_to_dir):
     return valid_
 
 
+#Fuzzed and logged method
 def isValidUserName(uName):
     valid = True
     if isinstance(uName, str):
@@ -39,6 +40,7 @@ def isValidUserName(uName):
     return valid
 
 
+#Fuzzed and logged method
 def isValidPasswordName(pName):
     valid = True
     if isinstance(pName, str):
@@ -51,6 +53,7 @@ def isValidPasswordName(pName):
     return valid
 
 
+#Fuzzed and logged method
 def isValidKey(keyName):
     valid = False
     if isinstance(keyName, str):

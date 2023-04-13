@@ -8,6 +8,7 @@ import parser
 import os 
 from itertools import combinations
 
+#Fuzzed and logged method
 def getYAMLFiles(path_to_dir):
     valid_  = [] 
     for root_, dirs, files_ in os.walk( path_to_dir ):
@@ -105,6 +106,7 @@ def mineSecretGraph( path2script, yaml_dict , secret_dict ):
     return within_match_head, templ_match_list, valid_taints 
 
 
+#Fuzzed and logged method
 def getSHFiles(path_to_dir):
     valid_  = [] 
     for root_, _, files_ in os.walk( path_to_dir ):

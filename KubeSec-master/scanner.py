@@ -12,6 +12,7 @@ import graphtaint
 import os
 import pandas as pd
 import numpy as np
+import logger
 
 
 def getYAMLFiles(path_to_dir):
@@ -31,6 +32,8 @@ def getYAMLFiles(path_to_dir):
 def isValidUserName(uName):
     valid = True
     if isinstance(uName, str):
+        logObj = logger.giveMeLoggingObject()
+        logObj.info('Detecting inputs for isValidUserName')
         if any(z_ in uName for z_ in constants.FORBIDDEN_USER_NAMES):
             valid = False
         else:
@@ -44,6 +47,8 @@ def isValidUserName(uName):
 def isValidPasswordName(pName):
     valid = True
     if isinstance(pName, str):
+        logObj = logger.giveMeLoggingObject()
+        logObj.info('Detecting inputs for isValidPasswordName')
         if any(z_ in pName for z_ in constants.FORBIDDEN_PASS_NAMES):
             valid = False
         else:
@@ -57,6 +62,8 @@ def isValidPasswordName(pName):
 def isValidKey(keyName):
     valid = False
     if isinstance(keyName, str):
+        logObj = logger.giveMeLoggingObject()
+        logObj.info('Detecting inputs for isValidkey')
         if any(z_ in keyName for z_ in constants.LEGIT_KEY_NAMES):
             valid = True
         else:

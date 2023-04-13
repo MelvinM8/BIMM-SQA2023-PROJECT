@@ -7,11 +7,14 @@ import constants
 import parser 
 import os 
 from itertools import combinations
+import logger
 
 #Fuzzed and logged method
 def getYAMLFiles(path_to_dir):
     valid_  = [] 
     for root_, dirs, files_ in os.walk( path_to_dir ):
+       logObj = logger.giveMeLoggingObject()
+       logObj.info('Detecting inputs for getYAMLFiles')
        for file_ in files_:
            full_p_file = os.path.join(root_, file_)
            if(os.path.exists(full_p_file)):
@@ -110,6 +113,8 @@ def mineSecretGraph( path2script, yaml_dict , secret_dict ):
 def getSHFiles(path_to_dir):
     valid_  = [] 
     for root_, _, files_ in os.walk( path_to_dir ):
+       logObj = logger.giveMeLoggingObject()
+       logObj.info('Detecting inputs for getSHFiles')
        for file_ in files_:
            full_p_file = os.path.join(root_, file_)
            if(os.path.exists(full_p_file)):

@@ -13,4 +13,4 @@ repos:
     rev: 1.7.5 # Update me!
     hooks:
     -   id: bandit
-        args: [--r, ~/BIMM-SQA2023-PROJECT/KubeSec-master, --f, csv, --output, bandit.csv]
+        args: [-r, ~/BIMM-SQA2023-PROJECT/KubeSec-master, -f, csv, -o, bandit.csv]

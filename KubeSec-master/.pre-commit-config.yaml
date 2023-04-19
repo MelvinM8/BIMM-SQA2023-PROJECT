@@ -1,3 +1,8 @@
+# Melvin Moreno
+# YAML file with bandit configurations
+# COMP6710
+# 04/18/2023
+
 repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v2.3.0

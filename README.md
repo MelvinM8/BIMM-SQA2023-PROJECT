@@ -21,8 +21,8 @@ The Objective of this project is to integrate software quality assurance activit
 1. Modify files in your project.
 2. Git add the files.
 3. Git commit and see the pre-commit hook run.
-4.a. The git hook will run the security analysis. This results in it showing "bandit...........Failed" in the terminal. This means that bandit found a security weakness and wants you to fix it before you can commit and push changes.
-4.b. If you want to ignore the security weakness, you can use the `--no-verify` flag when you commit. This will allow you to commit and push changes without fixing the security weakness.
+4. a. The git hook will run the security analysis. This results in it showing "bandit...........Failed" in the terminal. This means that bandit found a security weakness and wants you to fix it before you can commit and push changes.
+4. b. If you want to ignore the security weakness, you can use the `--no-verify` flag when you commit. This will allow you to commit and push changes without fixing the security weakness.
 5. Check the CSV file for the results.
 
 ### Deadline

@@ -18,6 +18,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas
           pip install numpy
+          pip install yaml
     - name: Run Fuzz
       run: python KubeSec-master/fuzz.py
       shell: sh

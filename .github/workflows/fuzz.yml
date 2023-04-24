@@ -1,0 +1,20 @@
+name: On Push, Fuzz
+
+on: push
+
+env:
+  fuzz_dir: fuzz
+jobs:
+  fuzz:
+    name: fuzz
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v2
+      with:
+       repository: MelvinM8/BIMM-SQA2023-PROJECT
+       token: ${{secrets.GITHUB_TOKEN}}
+       path: ${{env.fuzz_dir}}
+    - name: Run Fuzz
+      run: python ${{ env.fuzz_dir }}/fuzz.py
+      shell: sh

@@ -30,7 +30,7 @@ def fuzz():
                     print("Result returned is " + str(result) + " for arguments " + str(arg))
             except Exception as e:
                 print(str(func.__name__) + " has an issues with arguments " + str(arg))
-                traceback.print_exception(e)
+                traceback.print_exception(e, None)
             else:
                 print(str(func.__name__) + " passed with arguments " + str(arg))
         index = index  +1

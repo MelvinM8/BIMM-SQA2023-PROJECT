@@ -10,11 +10,11 @@ The Objective of this project is to integrate software quality assurance activit
 - Matthew Ippolito
 - Melvin Moreno
 
-### Tasks/TODO
+### Tasks
 1. Create a Git Hook that will run and report all security weaknesses in the project in a CSV file whenever a Python file  is changed and commited. (DONE)
-2. Create a 'fuzz.py' file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the 'fuzz.py' file. 'fuzz.py' will be automatically executed from GitHub actions.
-3. Integrate forensics by modifying 5 Python methods of our choice.
-4. Report our activities and lessons learned.
+2. Create a 'fuzz.py' file that will automatically fuzz 5 Python methods of your choice. Report any bugs you discovered by the 'fuzz.py' file. 'fuzz.py' will be automatically executed from GitHub actions. (DONE)
+3. Integrate forensics by modifying 5 Python methods of our choice. (DONE)
+4. Report our activities and lessons learned. (DONE)
 
 ### Instructions
 #### Git Hook Instructions
